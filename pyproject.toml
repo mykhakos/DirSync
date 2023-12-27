@@ -1,0 +1,29 @@
+[project]
+name = "dir_sync"
+version = "0.1.0"
+description = "Directory Syncer"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+  { name = "Konstantin Mykhailov", email = "constantinemykhailov@gmail.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.6"
+dependencies = []
+
+[project.scripts]
+dir_sync = "dir_sync._dir_sync:main"
+
+[project.urls]
+"Homepage" = "https://github.com/mykhakos/DirSync.git"
+
+[options]
+package_dir = {"" = "src"}
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
